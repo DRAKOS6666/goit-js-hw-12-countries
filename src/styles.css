@@ -20,13 +20,14 @@ h1 {
 }
 
 #input-search {
-  width: 100%;
+  width: 50%;
   height: 4rem;
   font-size: 2rem;
   background-color: #fbfbe1;
   padding: 10px;
   border-radius: 10px;
   line-height: 2rem;
+  box-shadow: 5px 5px 10px #182c62;
 }
 
 .input-label {
@@ -35,7 +36,7 @@ h1 {
   text-transform: uppercase;
   padding-bottom: 15px;
   color: #182c62;
-  font-size: 2rem;
+  font-size: 1.5rem;
 }
 
 .container {
@@ -43,9 +44,12 @@ h1 {
 }
 
 .country-title {
-  /* text-align: center; */
   text-transform: uppercase;
   font-size: 3rem;
+}
+
+.country-info {
+  width: 20%;
 }
 
 .country-info > p {
@@ -57,16 +61,30 @@ h1 {
   color: #182c62;
 }
 
-.search-result {
-  /* width: auto; */
-  /* width: 800px; */
-}
-
-.country-info {
-  width: 20%;
-}
-
 .flag-img {
-  /* width: 350px; */
+  box-shadow: 5px 5px 10px #182c62;
   height: 30vh;
+}
+
+/*List search result */
+
+.item-list {
+  display: flex;
+  flex-direction: column;
+  align-content: flex-start;
+  flex-grow: 0;
+  padding: 0;
+  width: auto;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  list-style-type: none;
+  font-size: 1.5rem;
+}
+
+.item-list-element {
+  cursor: pointer;
+  align-self: flex-start;
+  width: 50%;
+  margin: 5px;
+  padding: 10px 0 10px 10px;
+  border: solid #182c62;
 }
