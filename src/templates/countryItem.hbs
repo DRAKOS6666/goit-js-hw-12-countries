@@ -1,16 +1,16 @@
-<h3 class="country-title">{{name}}</h3>
-<div class="container">
-    <div class="country-info">
-        <p>Capital: <span class="country-info-data">{{capital}}</span></p>
-        <p>Population: <span class="country-info-data">{{population}}</span></p>
-        <p>Languages: </p>
-        <ul class="country-langs">
-            {{#each languages}}
-            <li class="coutry-lang-item">{{this.name}}</li>
-            {{/each}}
-        </ul>
-    </div>
-    <div class="country-flag">
-        <img class="flag-img" src="{{flag}}" alt="country flag image">
-    </div>
+<h3 class='country-title'>{{name}}</h3>
+<div class='container'>
+  <div class='country-info'>
+    <p>Capital: <span class='country-info-data'>{{capital}}</span></p>
+    <p>Region: <span class='country-info-data'>{{region}}</span></p>
+    <p>Phone codes: </p>
+    <ul class='country-langs'>
+      {{#each callingCodes}}
+        <li class='coutry-lang-item'>{{this}}</li>
+      {{/each}}
+    </ul>
+  </div>
+  {{!-- <div class='country-flag'>
+    <img class='flag-img' src='{{flag}}' alt='country flag image' />
+  </div> --}}
 </div>
